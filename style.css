@@ -1,0 +1,35 @@
+.photo-album{
+    display: flex;
+    flex-wrap: wrap;
+}
+.photo-frame{
+    width: 400px;
+    height: 265px;
+    border: 7px solid gold;
+    border-radius: 10px;
+    position: relative;
+    margin: 30px;
+}
+.photo-frame .photo img{
+    width: 100%;
+}
+.photo-detail{
+    position: absolute;
+    display: none;
+    width: 400px;
+    height: 267px;
+    top: 0;   
+}
+.photo-frame:hover .photo-detail{
+    display: block;
+    background-color: rgba(190, 157, 72, 0.7);
+} 
+.photo-frame:hover .photo-detail h3 {
+    height: 30px;
+    color: rgb(21, 255, 0);
+    background-color: black;
+    text-align: center;
+}
+.photo-frame:hover .photo-detail p{
+    color: black;
+}
